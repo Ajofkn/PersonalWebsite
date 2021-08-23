@@ -15,3 +15,21 @@ body{
     max-width: 1200px;
     margin: 0 auto;    
 }
+
+.certifications{
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;
+    position: relative;
+}
+.certification-thumbnail{
+    padding: 0px;
+    margin: 75px 200px;
+    max-width: 200px;
+    height: auto;
+}
+.section-title{
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+}
