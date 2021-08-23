@@ -41,9 +41,9 @@ body {
   margin: 0 auto;
   z-index: 3;
   display: flex;
-  position: absolute;
   left: 0;
   order: 2;
+  position: relative;
   flex-wrap: wrap;
   margin: 25px;
 }
@@ -52,7 +52,7 @@ body {
   font-size: 75px;
 }
 
-.container a img {
+.certification-thumbnail {
   max-width: 80px;
   margin-left: 50px;
 }
@@ -60,4 +60,20 @@ body {
 .container h3 {
   width: 100%;
   margin-left: 100px;
+}
+
+.textbox {
+  /* visibility: hidden; */
+  display: inline;
+  border: 5px solid white;
+  background: #2522b5;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 350px;
+  bottom: 120px;
+}
+
+.container a img:hover .container .textbox {
+  background: pink;
 }
