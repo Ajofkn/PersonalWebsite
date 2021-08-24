@@ -14,9 +14,14 @@ body {
 .nav{
     position: absolute;
     bottom: 0;
+    left: 0;
     right: 0;
     z-index: 3;
     padding: 10px;
+}
+.nav .nav-container{
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav ul{
@@ -24,6 +29,12 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
+}
+
+.nav .tagline{
+    margin-left: 50px;
+    font-size: 25px;
+    color: #fff;
 }
 
 .nav a{
@@ -39,7 +50,7 @@ display: block;
 height: 2px;
 width: 0;
 background: transparent;
-transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+transition: width .5s ease, background-color .5s ease;
 
 }
 .nav a:hover:after 
@@ -78,23 +89,20 @@ background: #fff;
   z-index: 3;
   display: flex;
   left: 0;
+  right: 0;
   position: relative;
   flex-wrap: wrap;
-  margin: 25px;
 }
 
 .container h1 {
   font-size: 75px;
+  margin-bottom: 250px;
+  margin-left: 50px;
 }
 
 .certification-thumbnail {
   max-width: 100px;
   margin-left: 50px;
-}
-
-.container h3 {
-  width: 100%;
-  margin-left: 100px;
 }
 
 .textbox {
@@ -105,8 +113,8 @@ background: #fff;
   border-radius: 12px;
   padding: 10px;
   position: absolute;
-  left: 350px;
-  bottom: 120px;
+  left: 450px;
+  bottom: 320px;
 }
 
 .certifications:hover .textbox {
