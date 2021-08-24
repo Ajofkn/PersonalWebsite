@@ -9,6 +9,8 @@
 body {
   font-family: 'Lato', sans-serif;
   color: #222;
+  text-shadow: 3px 3px #000;
+  font-weight: bold;
 }
 
 .nav{
@@ -21,7 +23,7 @@ body {
 }
 .nav .nav-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .nav ul{
@@ -29,12 +31,6 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
-}
-
-.nav .tagline{
-    margin-left: 50px;
-    font-size: 25px;
-    color: #fff;
 }
 
 .nav a{
@@ -60,7 +56,7 @@ background: #fff;
 }
 
 .hero {
-  background-image: url(/hong-kong-minimal-4k-90.jpg);
+  background-image: url("https://images.pexels.com/photos/1672322/pexels-photo-1672322.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -71,17 +67,6 @@ background: #fff;
   justify-content: initial;
   position: relative;
   z-index: 2;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
 }
 
 .container {
@@ -100,10 +85,18 @@ background: #fff;
 }
 
 .certification-thumbnail {
-  max-width: 100px;
+  max-width: 150px;
   margin-left: 50px;
 }
 
+.tagline {
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  left: 50px;
+  bottom: 140px;
+
+}
 
 .textbox {
   visibility: hidden;
